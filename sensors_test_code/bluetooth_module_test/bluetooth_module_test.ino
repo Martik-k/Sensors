@@ -30,12 +30,10 @@ void loop()
     { 
         digitalWrite(LED, HIGH);
         Serial.println("LED On");
-        digitalWrite(LED, HIGH);
     } 
     else if (flag == '0') 
     { 
         digitalWrite(LED, LOW); 
         Serial.println("LED Off");
-        digitalWrite(LED, HIGH);
     } 
 }
