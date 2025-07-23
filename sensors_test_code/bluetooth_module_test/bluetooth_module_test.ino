@@ -8,7 +8,7 @@ NEW SKETCH
 
 #include "SoftwareSerial.h"
 
-SoftwareSerial MyBlue(2, 3); // RX | TX 
+SoftwareSerial MyBlue(0, 1); // RX | TX 
 
 int flag = 0; 
 int LED = 8; 
