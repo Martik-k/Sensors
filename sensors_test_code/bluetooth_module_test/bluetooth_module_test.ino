@@ -8,6 +8,7 @@ NEW SKETCH
 
 #include "SoftwareSerial.h"
 
+
 SoftwareSerial MyBlue(0, 1); // RX | TX 
 
 int flag = 0; 
@@ -27,12 +28,14 @@ void loop()
         flag = MyBlue.read(); 
     if (flag == '1') 
     { 
-        digitalWrite(LED, HIGH); 
-        Serial.println("LED On"); 
+        digitalWrite(LED, HIGH);
+        Serial.println("LED On");
+        digitalWrite(LED, HIGH);
     } 
     else if (flag == '0') 
     { 
         digitalWrite(LED, LOW); 
-        Serial.println("LED Off"); 
+        Serial.println("LED Off");
+        digitalWrite(LED, HIGH);
     } 
 }
